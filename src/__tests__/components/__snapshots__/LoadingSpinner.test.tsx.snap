@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`LoadingSpinner should match snapshot 1`] = `
+<div>
+  <div
+    aria-label="Loading"
+    class="loading-spinner"
+    role="status"
+  >
+    <div
+      class="spinner"
+    />
+    <p
+      class="text-gray-500"
+    >
+      Calculating taxes...
+    </p>
+  </div>
+</div>
+`;

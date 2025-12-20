@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ErrorMessage should match snapshot 1`] = `
+<div>
+  <div
+    class="bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg flex justify-between items-center slide-in"
+    role="alert"
+  >
+    <span>
+      Test error
+    </span>
+  </div>
+</div>
+`;

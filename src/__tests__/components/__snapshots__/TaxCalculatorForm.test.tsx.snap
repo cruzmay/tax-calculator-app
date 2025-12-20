@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`TaxCalculatorForm should match snapshot 1`] = `
+<div>
+  <form
+    class="w-full flex flex-col items-center justify-center bg-white p-4 rounded-lg gap-4 shadow-md"
+  >
+    <div
+      class="w-full flex flex-col items-center justify-center gap-2"
+    >
+      <label
+        class="text-gray-700 flex flex-row items-center justify-center gap-1 text-nowrap font-bold"
+        for="salary"
+      >
+        Annual Income 
+        <span>
+          *
+        </span>
+      </label>
+      <input
+        class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        id="salary"
+        min="0"
+        placeholder="Enter annual income"
+        required=""
+        step="0.01"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      class="w-full flex flex-row items-center justify-center gap-2"
+    >
+      <label
+        class="text-gray-700 flex flex-row items-center justify-center gap-1 text-nowrap font-bold"
+        for="year"
+      >
+        Tax Year 
+        <span>
+          *
+        </span>
+      </label>
+      <select
+        class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        id="year"
+      >
+        <option
+          value="2019"
+        >
+          2019
+        </option>
+        <option
+          value="2020"
+        >
+          2020
+        </option>
+        <option
+          value="2021"
+        >
+          2021
+        </option>
+        <option
+          value="2022"
+        >
+          2022
+        </option>
+      </select>
+    </div>
+    <button
+      class="bg-blue-500 text-white p-2 rounded-md cursor-pointer w-full hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed transition-all duration-300"
+      disabled=""
+      type="submit"
+    >
+      Calculate Taxes
+    </button>
+  </form>
+</div>
+`;
