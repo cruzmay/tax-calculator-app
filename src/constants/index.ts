@@ -34,7 +34,7 @@ export const MIN_SALARY = 0;
 export const SALARY_ERROR_MESSAGE = 'Annual income must be a positive number';
 
 // API constants
-export const API_BASE_URL = 'http://localhost:5001';
+export const API_BASE_URL = process.env.VITE_API_BASE_URL || 'http://localhost:5001';
 export const MAX_RETRIES = 3;
 export const RETRY_DELAY_MS = 1000;
 export const REQUEST_TIMEOUT_MS = 10000;

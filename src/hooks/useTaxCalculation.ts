@@ -34,7 +34,7 @@ export function useTaxCalculation(): UseTaxCalculationReturn {
     return salary >= MIN_SALARY;
   };
 
-  const calculate = useCallback(async (salary: number, year: TaxYear) => {
+  const calculate = async (salary: number, year: TaxYear) => {
     if (!validateSalary(salary)) {
       setError({
         message: SALARY_ERROR_MESSAGE,
@@ -64,17 +64,17 @@ export function useTaxCalculation(): UseTaxCalculationReturn {
     } finally {
       setLoading(false);
     }
-  }, []);
+  };
 
-  const clearError = useCallback(() => {
+  const clearError = () => {
     setError(null);
-  }, []);
+  };
 
-  const reset = useCallback(() => {
+  const reset = () => {
     setError(null);
     setTaxBrackets(null);
     setCalculationResult(null);
-  }, []);
+  };
 
   return {
     loading,

@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
-    "types": ["jest", "@testing-library/jest-dom"],
+    "types": ["jest", "@testing-library/jest-dom", "node"],
     "noEmit": true,
     "verbatimModuleSyntax": false,
     "moduleResolution": "node",
@@ -12,7 +12,8 @@
     "src/**/*.test.tsx",
     "src/__tests__/**/*.ts",
     "src/__tests__/**/*.tsx",
-    "src/__tests__/**/*.d.ts"
+    "src/__tests__/**/*.d.ts",
+    "src/vite-env.d.ts"
   ]
 }
 

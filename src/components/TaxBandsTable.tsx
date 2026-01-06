@@ -37,10 +37,11 @@ export function TaxBandsTable({ result }: TaxBandsTableProps): React.ReactNode {
             </tr>
           </thead>
           <tbody>
-            {result.bandsBreakdown.map((band: BandBreakdown, index: number) => (
+            {result.bandsBreakdown.map((band: BandBreakdown) => (
               <tr
-                key={index}
+                key={band.bracket.rate}
                 className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
+                data-testid={`tax-band-${band.bracket.rate}`}
               >
                 <td className="text-left text-gray-700 py-3 px-4 border-r border-gray-200 font-medium text-nowrap">
                   {formatBracketRange(band.bracket.min, band.bracket.max)}
