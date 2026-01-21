@@ -4,6 +4,8 @@ import { LoginPage, CalculatorPage } from './pages';
 import { AuthenticatedLayout } from './components/AuthenticatedLayout';
 
 function App() {
+console.log("here")
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-gray-100">
       <Routes>
